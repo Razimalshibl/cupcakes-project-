@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style2.css">
+    <title>Cupcakes Website</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="content">
+                <h1>Shop  <span> Cupcakes </span></h1>
+                <h2>Order Cupcakes For your Party</h2>
+                <p>Cupcakes are always a popular treat at any party. They're easy to share and eat, plus there's no extra plates or forks to wash. They're fun to decorate.</p>
+                <a href="#">Order Now</a>
+            </div>
+            <div class="img-box">
+                <img src="cup1.png" class="Cupcake" alt="Cupcake">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="cup1.png" onclick="imgSlider('cup1.png');changeCircleColor('#e7b6ab')"></li>
+            <li><img src="cup2.png" onclick="imgSlider('cup2.png');changeCircleColor('#558b2f')"></li>
+            <li><img src="cup3.png" onclick="imgSlider('cup3.png');changeCircleColor('#ffa726')"></li>
+            <li><img src="cup4.png" onclick="imgSlider('cup4.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/CupcakeSavvy/"><img src="facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/nolacupcakes?igsh=cmppNnF2ZDc5aWQ2"><img src="instagram.png"></a></li>
+            <li><a href="https://x.com/roseribbon_?s=21&t=YPQLlCksMusY_m1ve4MTEA"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Cupcake').src = anything;
+        }
+       function changeCircleColor (color){
+             const circle = document.querySelector('.circle');
+             circle.style.background = color;
+       }
+    </script>
+   <footer>
+        <p>© 2024 by Razim & Sara. All rights reserved.</p>
+   </footer>
+</body>
+</html>
